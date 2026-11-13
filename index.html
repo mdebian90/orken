@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ØRKEN</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Teko:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <main class="viewport-scene">
+
+    <div class="ambient-particles" id="ambientParticles" aria-hidden="true"></div>
+
+    <div class="vignette-overlay" aria-hidden="true"></div>
+
+    <header class="brand-logo-zone">
+      <img src="img/logo.png" class="brand-logo-img">
+    </header>
+
+    <section class="showcase-stage">
+      <div class="showcase-frame" id="showcaseFrame">
+        <div class="showcase-card-clip">
+          <img
+            id="showcasePreviewImg"
+            class="showcase-preview-img"
+            src=""
+          >
+        </div>
+
+        <svg class="showcase-hud-border" viewBox="0 0 900 506" preserveAspectRatio="none" aria-hidden="true">
+          <polygon
+            class="hud-border-outer"
+            points="24,14 888,6 876,492 12,500"
+          />
+          <polygon
+            class="hud-border-inner"
+            points="36,26 874,18 864,480 26,488"
+          />
+        </svg>
+      </div>
+      <div class="showcase-ground-shadow"></div>
+    </section>
+
+    <nav class="main-menu-container">
+
+      <div class="main-menu-heading">MAIN MENU</div>
+
+      <div class="selector-bar-7slots" id="selectorBar">
+        <button
+          type="button"
+          class="nav-arrow-btn"
+          id="navLeftBtn"
+        >
+          <svg viewBox="0 0 36 32" aria-hidden="true">
+            <polygon points="18,4 6,16 18,28 22,24 14,16 22,8" />
+            <polygon points="30,4 18,16 30,28 34,24 26,16 34,8" />
+          </svg>
+        </button>
+
+        <button type="button" class="menu-slot-btn slot-small" id="slotLeftSmall"></button>
+
+        <button type="button" class="menu-slot-btn slot-medium" id="slotLeftMedium"></button>
+
+        <button type="button" class="menu-slot-btn slot-large" id="slotCenterLarge"></button>
+
+        <button type="button" class="menu-slot-btn slot-medium" id="slotRightMedium"></button>
+
+        <button type="button" class="menu-slot-btn slot-small" id="slotRightSmall"></button>
+
+        <button
+          type="button"
+          class="nav-arrow-btn"
+          id="navRightBtn"
+        >
+          <svg viewBox="0 0 36 32" aria-hidden="true">
+            <polygon points="18,4 30,16 18,28 14,24 22,16 14,8" />
+            <polygon points="6,4 18,16 6,28 2,24 10,16 2,8" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="active-option-title" id="activeOptionTitle">3D</div>
+    </nav>
+
+  </main>
+
+  <div class="page-transition-curtain" id="transitionCurtain">LOADING...</div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
